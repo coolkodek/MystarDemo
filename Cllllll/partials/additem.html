@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form ng-submit="additem(frm.$valid)" name="frm" class="form-group" novalidate>
+    <table class="table table-bordered">
+        <tr>
+            <td>
+                Item Name :
+            </td>
+            <td>
+                <input type="text" ng-model="item.name" required/> <span style="color: red">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Item Type :
+            </td>
+            <td>
+                <select ng-model="item.type" ng-options="type for type in types" required>
+                    <option value="">Select</option>
+                </select><span style="color: red">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Quantity
+            </td>
+            <td>
+                <input type="number" ng-model="item.quantity" required/><span style="color: red">*</span>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="2">
+                <input type="submit" value="Add Item" />
+                <input type="button" value="Synch With Database"  ng-click="synch()"/>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+10
+
+dir
+0
+http://10.2.10.136/svn/mkclos/JOS/JTemplateServer/routes/rMyRoute
+http://10.2.10.136/svn/mkclos/JOS
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+73b99f6a-1c22-43e5-9783-713e7e369ee3
+
+MyRoute.js
+file
+
+
+
+add
+
+newRoute.js
+file
+
+
+
+add
+
